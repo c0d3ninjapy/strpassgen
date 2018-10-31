@@ -63,7 +63,7 @@ encodeb85 = base64.b85encode(password)
 print ("Base85: " + str(encodeb85) + "\n")
 
 ask = input("Do you want to encrypt your password with symmetric encryption algorithm? (Y/N): ")
-if ask == "Y" or "y":
+if ask == "Y" or ask == "y":
     cipher_key = Fernet.generate_key()
     print ("Cipher Key: " + str(cipher_key))
     time.sleep(1)
