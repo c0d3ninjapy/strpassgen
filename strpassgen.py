@@ -70,7 +70,7 @@ if ask == "Y" or ask == "y":
     cipher = Fernet(cipher_key)
     encrypted_text = cipher.encrypt(password)
     print ("Encrypted Text: " + str(encrypted_text) + "\n")
-elif ask == "N" or "n":
+elif ask == "N" or ask == "n":
     print ("::::THANK YOU FOR USING StrPassGen V1.0 by c0deNinja!!::::")
 
 # Decrypt your password: decrypted_text = cipher.decrypt(encrypted_text) print (decrypted_text)
